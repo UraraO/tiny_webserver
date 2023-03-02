@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "D:/Clion_projects/tiny_WebServer/bin/thread_poll/thread_sync",
+		"source" : "src/thread_poll/thread_sync"
+	}
+}
