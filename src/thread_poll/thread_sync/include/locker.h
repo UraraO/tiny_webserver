@@ -44,5 +44,9 @@ private:
 };
 
 // 条件变量类
+class cond {
+	
+};
+
 
 #endif
