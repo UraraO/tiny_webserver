@@ -1,0 +1,19 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/root/remote_repo/tiny_WebServer/src/thread_pool/thread_sync/locker.cpp" "/root/remote_repo/tiny_WebServer/bin/thread_pool/thread_sync/CMakeFiles/locker.dir/locker.cpp.o" "gcc" "/root/remote_repo/tiny_WebServer/bin/thread_pool/thread_sync/CMakeFiles/locker.dir/locker.cpp.o.d"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

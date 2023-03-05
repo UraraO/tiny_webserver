@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblocker.a CMakeFiles/locker.dir/locker.cpp.o
+/usr/bin/ranlib liblocker.a

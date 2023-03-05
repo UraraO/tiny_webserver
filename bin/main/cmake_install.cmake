@@ -1,4 +1,4 @@
-# Install script for directory: /root/remote_repo/tiny_WebServer/src
+# Install script for directory: /root/remote_repo/tiny_WebServer/src/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,20 +40,5 @@ endif()
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/root/remote_repo/tiny_WebServer/bin/thread_pool/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/root/remote_repo/tiny_WebServer/bin/main/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/root/remote_repo/tiny_WebServer/bin/http/cmake_install.cmake")
 endif()
 
