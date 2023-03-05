@@ -1,0 +1,158 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "/root/remote_repo/tiny_WebServer/bin",
+					"childIndexes" : 
+					[
+						2,
+						4,
+						5
+					],
+					"jsonFile" : "directory-src-Debug-d470dd673b7eba7210e0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "/root/remote_repo/tiny_WebServer/bin/thread_pool",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-src.thread_pool-Debug-0156cbdd12ae09495f52.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/thread_pool"
+				},
+				{
+					"build" : "/root/remote_repo/tiny_WebServer/bin/thread_pool/thread_sync",
+					"jsonFile" : "directory-src.thread_pool.thread_sync-Debug-e401860a2ad2db30a85a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/thread_pool/thread_sync",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "/root/remote_repo/tiny_WebServer/bin/main",
+					"jsonFile" : "directory-src.main-Debug-ac25204c8a3aadfd2c3b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/main",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "/root/remote_repo/tiny_WebServer/bin/http",
+					"jsonFile" : "directory-src.http-Debug-545cbf49f877da0703c2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/http",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"name" : "tiny_WebServer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 5,
+					"id" : "http_connection::@e9a3e5c3dc48368bce6a",
+					"jsonFile" : "target-http_connection-Debug-5206ba9dba02f690635d.json",
+					"name" : "http_connection",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "locker::@148e2308ccfd6c2eb24c",
+					"jsonFile" : "target-locker-Debug-5cb3955a6738ba879578.json",
+					"name" : "locker",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "server::@1b39f72f6902be1dde34",
+					"jsonFile" : "target-server-Debug-cf88b4176e6a735c93da.json",
+					"name" : "server",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/root/remote_repo/tiny_WebServer/cmake-build-debug-",
+		"source" : "/root/remote_repo/tiny_WebServer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

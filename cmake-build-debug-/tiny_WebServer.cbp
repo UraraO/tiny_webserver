@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="tiny_WebServer"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\thread_pool\;CMake Files\src\thread_pool\thread_sync\;CMake Files\src\main\;CMake Files\src\http\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/root/remote_repo/tiny_WebServer/cmake-build-debug-"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/cmake-build-debug-/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/cmake-build-debug-/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/cmake-build-debug-/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/cmake-build-debug-/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/root/remote_repo/tiny_WebServer/cmake-build-debug-"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/cmake-build-debug-/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/cmake-build-debug-/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/cmake-build-debug-/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/cmake-build-debug-/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/root/remote_repo/tiny_WebServer/cmake-build-debug-"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/cmake-build-debug-/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/cmake-build-debug-/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/cmake-build-debug-/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/cmake-build-debug-/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="locker">
+				<Option output="/root/remote_repo/tiny_WebServer/bin/thread_pool/thread_sync/liblocker.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/remote_repo/tiny_WebServer/bin/thread_pool/thread_sync"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/root/remote_repo/tiny_WebServer/src/thread_pool/thread_sync/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/thread_pool/thread_sync/Makefile&quot;  VERBOSE=1 locker"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/thread_pool/thread_sync/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/thread_pool/thread_sync/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/thread_pool/thread_sync/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="locker/fast">
+				<Option output="/root/remote_repo/tiny_WebServer/bin/thread_pool/thread_sync/liblocker.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/remote_repo/tiny_WebServer/bin/thread_pool/thread_sync"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/root/remote_repo/tiny_WebServer/src/thread_pool/thread_sync/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/thread_pool/thread_sync/Makefile&quot;  VERBOSE=1 locker/fast"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/thread_pool/thread_sync/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/thread_pool/thread_sync/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/thread_pool/thread_sync/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="server">
+				<Option output="/root/remote_repo/tiny_WebServer/bin/main/server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/remote_repo/tiny_WebServer/bin/main"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/root/remote_repo/tiny_WebServer/src/main/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/main/Makefile&quot;  VERBOSE=1 server"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/main/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/main/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/main/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="server/fast">
+				<Option output="/root/remote_repo/tiny_WebServer/bin/main/server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/remote_repo/tiny_WebServer/bin/main"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/root/remote_repo/tiny_WebServer/src/main/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/main/Makefile&quot;  VERBOSE=1 server/fast"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/main/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/main/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/main/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="http_connection">
+				<Option output="/root/remote_repo/tiny_WebServer/bin/http/libhttp_connection.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/remote_repo/tiny_WebServer/bin/http"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/root/remote_repo/tiny_WebServer/src/http/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/http/Makefile&quot;  VERBOSE=1 http_connection"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="http_connection/fast">
+				<Option output="/root/remote_repo/tiny_WebServer/bin/http/libhttp_connection.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/remote_repo/tiny_WebServer/bin/http"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/root/remote_repo/tiny_WebServer/src/http/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/http/Makefile&quot;  VERBOSE=1 http_connection/fast"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/root/remote_repo/tiny_WebServer/bin/http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/root/remote_repo/tiny_WebServer/src/http/http_connection.cpp">
+			<Option target="http_connection"/>
+		</Unit>
+		<Unit filename="/root/remote_repo/tiny_WebServer/src/main/main.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/root/remote_repo/tiny_WebServer/src/thread_pool/thread_sync/locker.cpp">
+			<Option target="locker"/>
+		</Unit>
+		<Unit filename="/root/remote_repo/tiny_WebServer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/root/remote_repo/tiny_WebServer/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/root/remote_repo/tiny_WebServer/src/thread_pool/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\thread_pool\"/>
+		</Unit>
+		<Unit filename="/root/remote_repo/tiny_WebServer/src/thread_pool/thread_sync/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\thread_pool\thread_sync\"/>
+		</Unit>
+		<Unit filename="/root/remote_repo/tiny_WebServer/src/main/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\main\"/>
+		</Unit>
+		<Unit filename="/root/remote_repo/tiny_WebServer/src/http/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\http\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
