@@ -1,2 +1,5 @@
 bin/
 cmake-build-debug-/
+cmake-build-debug/
+build/
+*.marker

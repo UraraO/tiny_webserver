@@ -185,8 +185,8 @@ locker: /root/remote_repo/tiny_WebServer/bin/thread_pool/thread_sync/CMakeFiles/
 # Target rules for target /root/remote_repo/tiny_WebServer/bin/main/CMakeFiles/server.dir
 
 # All Build rule for target.
-/root/remote_repo/tiny_WebServer/bin/main/CMakeFiles/server.dir/all: /root/remote_repo/tiny_WebServer/bin/http/CMakeFiles/http_connection.dir/all
 /root/remote_repo/tiny_WebServer/bin/main/CMakeFiles/server.dir/all: /root/remote_repo/tiny_WebServer/bin/thread_pool/thread_sync/CMakeFiles/locker.dir/all
+/root/remote_repo/tiny_WebServer/bin/main/CMakeFiles/server.dir/all: /root/remote_repo/tiny_WebServer/bin/http/CMakeFiles/http_connection.dir/all
 	$(MAKE) $(MAKESILENT) -f /root/remote_repo/tiny_WebServer/bin/main/CMakeFiles/server.dir/build.make /root/remote_repo/tiny_WebServer/bin/main/CMakeFiles/server.dir/depend
 	$(MAKE) $(MAKESILENT) -f /root/remote_repo/tiny_WebServer/bin/main/CMakeFiles/server.dir/build.make /root/remote_repo/tiny_WebServer/bin/main/CMakeFiles/server.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/remote_repo/tiny_WebServer/build/CMakeFiles --progress-num=5,6 "Built target server"
