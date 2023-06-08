@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="远程主机 (097d634c-a7a7-4237-be3c-71008c8fe7e6)" createEmptyFolders="true" showDifferentInSync="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="远程主机 (097d634c-a7a7-4237-be3c-71008c8fe7e6)" createEmptyFolders="true" confirmBeforeDeletion="false" showDifferentInSync="false">
+    <option name="confirmBeforeDeletion" value="false" />
     <serverData>
       <paths name="远程主机 (097d634c-a7a7-4237-be3c-71008c8fe7e6)">
         <serverdata>
@@ -8,6 +9,7 @@
             <mapping deploy="/remote_repo/tiny_WebServer" local="$PROJECT_DIR$" web="/" />
           </mappings>
           <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-" />
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-" />
           </excludedPaths>

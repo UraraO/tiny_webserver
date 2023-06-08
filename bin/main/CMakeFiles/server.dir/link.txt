@@ -1,1 +1,0 @@
-/usr/bin/c++  -pthread CMakeFiles/server.dir/main.cpp.o -o server  ../http/libhttp_connection.a ../thread_pool/thread_sync/liblocker.a 
