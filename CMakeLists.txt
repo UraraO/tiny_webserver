@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
 
-add_subdirectory(src)
+add_subdirectory(src ./bin)
 
 message("1. PROJECT_BINARY_DIR = ${PROJECT_BINARY_DIR}")
 message("2. PROJECT_SOURCE _DIR = ${PROJECT_SOURCE_DIR}")

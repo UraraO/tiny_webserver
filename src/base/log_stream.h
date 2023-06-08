@@ -24,7 +24,9 @@ class fixed_buffer {
 public:
 	// prevent copy
 	fixed_buffer(const fixed_buffer &) = delete;
+	fixed_buffer(fixed_buffer &) = delete;
 	fixed_buffer& operator=(const fixed_buffer &) = delete;
+	fixed_buffer& operator=(fixed_buffer &) = delete;
 
 	fixed_buffer() : m_cur(m_data) {}
 	~fixed_buffer() = default;
@@ -105,7 +107,6 @@ public:
 		m_buffer.append(v.c_str(), v.size());
 		return *this;
 	}
-
 
 	const buffer_t& buffer() const { return m_buffer; }
 	void reset_buffer() { m_buffer.reset_cur(); }

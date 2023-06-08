@@ -12,7 +12,7 @@
 
 // constructor
 append_file::append_file(string filename) :
-	m_fp(fopen(filename.c_str(), "ae")) {
+	m_fp(fopen(filename.c_str(), "a+")) {
 	setbuffer(m_fp, m_buffer, sizeof(m_buffer));
 }
 

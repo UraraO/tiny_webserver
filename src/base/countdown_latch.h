@@ -20,7 +20,9 @@ public:
 	// 禁止拷贝
 	// prevent copy
 	countdown_latch(const countdown_latch &other) = delete;
+	countdown_latch(countdown_latch &other) = delete;
 	countdown_latch &operator=(const countdown_latch &other) = delete;
+	countdown_latch &operator=(countdown_latch &other) = delete;
 
 	explicit countdown_latch(int count) : m_count(count) {}
 

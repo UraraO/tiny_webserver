@@ -24,9 +24,11 @@ class log_file {
 public:
 	// prevent copy
 	log_file(const log_file &other) = delete;
+	log_file(log_file &other) = delete;
 	log_file& operator=(const log_file &other) = delete;
+	log_file& operator=(log_file &other) = delete;
 
-	log_file(const string basename, int N);
+	explicit log_file(const string &basename, int N = 1024);
 
 	void append(const char *logline, size_t length);
 	void flush();

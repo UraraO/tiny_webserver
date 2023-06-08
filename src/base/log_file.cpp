@@ -4,7 +4,7 @@
 
 #include "log_file.h"
 
-log_file::log_file(const string basename, int N = 1024) :
+log_file::log_file(const string &basename, int N) :
 	m_basename(basename),
 	flush_per_N(N),
 	m_count(0),

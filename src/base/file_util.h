@@ -19,7 +19,9 @@ public:
 	// 禁止拷贝
 	// prevent copy
 	append_file(const append_file &other) = delete;
+	append_file(append_file &other) = delete;
 	append_file& operator=(const append_file &other) = delete;
+	append_file& operator=(append_file &other) = delete;
 
 	explicit append_file(string filename);
 	~append_file();
