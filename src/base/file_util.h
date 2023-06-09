@@ -6,6 +6,10 @@
  *
  * */
 
+/*
+ * test success
+ * */
+
 #pragma once
 
 #include <string>
@@ -23,7 +27,7 @@ public:
 	append_file& operator=(const append_file &other) = delete;
 	append_file& operator=(append_file &other) = delete;
 
-	explicit append_file(string filename);
+	explicit append_file(const string& filename);
 	~append_file();
 
 	// append(),向磁盘文件写入
@@ -34,9 +38,8 @@ public:
 private:
 	size_t write(const char *logline, const size_t length);
 	FILE *m_fp;
-	char m_buffer[BUFFER_SIZE];
+	char m_buffer[BUFFER_SIZE]{};
 };
-
 
 
 

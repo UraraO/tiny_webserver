@@ -7,6 +7,10 @@
  *
  * */
 
+/*
+ * test success
+ * */
+
 #pragma once
 
 #include <memory>
@@ -28,23 +32,23 @@ public:
 	log_file& operator=(const log_file &other) = delete;
 	log_file& operator=(log_file &other) = delete;
 
+	~log_file() = default;
+
 	explicit log_file(const string &basename, int N = 1024);
 
-	void append(const char *logline, size_t length);
+	void append_unlocked(const char *logline, size_t length);
+	//void append(const char *logline, size_t length);
 	void flush();
 	// bool roll_file();
 
 private:
-	void append_unlocked(const char *logline, size_t length);
-
 	const string m_basename;
 	const int flush_per_N;
 	int m_count;
 
-	unique_ptr<mutex> m_up_mutex;
+	mutex m_mutex;
 	unique_ptr<append_file> m_up_append_file;
 };
-
 
 
 

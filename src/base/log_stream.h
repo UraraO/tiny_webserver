@@ -9,6 +9,7 @@
 
 #pragma once
 
+
 #include <cassert>
 #include <cstring>
 #include <string>
@@ -64,6 +65,8 @@ public:
 	log_stream(const log_stream &) = delete;
 	log_stream& operator=(const log_stream &) = delete;
 
+	log_stream() = default;
+
 	// operator << for many types
 	log_stream& operator<<(bool v) {
 		m_buffer.append(v ? "1" : "0", 1);
@@ -91,7 +94,7 @@ public:
 	log_stream& operator<<(double);
 	log_stream& operator<<(long double);
 
-	log_stream& operator<<(const char* str) {
+	log_stream& operator<<(const char *str) {
 		if (str)
 			m_buffer.append(str, strlen(str));
 		else
@@ -122,7 +125,6 @@ private:
 	static const size_t max_remain_size = 32;
 
 };
-
 
 
 
