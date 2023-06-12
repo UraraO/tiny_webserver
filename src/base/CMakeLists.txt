@@ -4,7 +4,7 @@ set(BASE_SRCS
 	log_file.cpp
 	async_log.cpp
 	log_stream.cpp
-	thread.cpp
+	uthread.cpp
 	ulog.cpp
 
 	)
@@ -12,7 +12,7 @@ set(BASE_SRCS
 add_library(base ${BASE_SRCS})
 
 #add_executable(async_log async_log.cpp)
-#add_executable(uthread thread.cpp)
+#add_executable(uthread uthread.cpp)
 #add_executable(ulog ulog.cpp)
 #add_executable(file_util file_util.cpp)
 #add_executable(log_file log_file.cpp)

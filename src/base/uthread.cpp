@@ -5,7 +5,7 @@
 
 #include <utility>
 
-#include "thread.h"
+#include "uthread.h"
 
 
 uthread::uthread(uthread::thread_func_type func, const string &name) :

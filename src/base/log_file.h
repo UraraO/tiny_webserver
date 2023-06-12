@@ -46,7 +46,7 @@ private:
 	const int flush_per_N;
 	int m_count;
 
-	mutex m_mutex;
+	mutable mutex m_mutex;
 	unique_ptr<append_file> m_up_append_file;
 };
 

@@ -5,7 +5,7 @@
 #include <sys/mman.h>
 #include <sys/stat.h>
 
-#include "channel.h"
+//#include "channel.h"
 #include "event_loop.h"
 #include "util.h"
 #include "base/ulog.h"
@@ -15,6 +15,7 @@
 
 using std::bind;
 
+static once_flag once_flag_;
 unordered_map<string, string> MIME_type::m_mime;
 
 const __uint32_t DEFAULT_EVENT = EPOLLIN | EPOLLET | EPOLLONESHOT;

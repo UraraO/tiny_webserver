@@ -1,9 +1,11 @@
 
 
 
-#include "timer.h"
+//#include "timer.h"
+#include "http_data.h"
 
 using std::make_shared;
+//using http_data_sp = shared_ptr<http_data>;
 
 timer_node::timer_node(timer_node::http_data_sp data, size_t timeout) : deleted_(false),
 	m_data_sp(data)

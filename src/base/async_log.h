@@ -19,7 +19,7 @@
 
 #include "countdown_latch.h"
 #include "log_stream.h"
-#include "thread.h"
+#include "uthread.h"
 
 using std::vector;
 using std::string;
@@ -68,7 +68,7 @@ private:
 	bool running_;
 	string m_file_name;
 	uthread m_thread;
-	mutex m_mut;
+	mutable mutex m_mut;
 	condition_variable m_cond;
 	countdown_latch m_latch;
 	buffer_ptr current_buffer_ptr_;

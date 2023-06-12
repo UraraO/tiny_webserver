@@ -30,7 +30,7 @@ public:
 	void count_down();
 
 private:
-	mutex m_mut;
+	mutable mutex m_mut;
 	condition_variable m_cond;
 	int m_count;
 };

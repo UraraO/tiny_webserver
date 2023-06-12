@@ -29,7 +29,7 @@ using std::weak_ptr;
 
 
 class event_loop;
-class timer_node;
+//class timer_node;
 class channel;
 
 // enum http报文中的多种数据
@@ -92,7 +92,6 @@ public:
 private:
 	static void init();
 	static unordered_map<string, string> m_mime;
-	static once_flag once_flag_;
 };
 
 
