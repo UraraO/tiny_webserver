@@ -12,7 +12,10 @@
 | [并发模型](https://github.com/UraraO/tiny_WebServer/tree/main/doc/concurrency_frame.md)|[异步日志系统](https://github.com/UraraO/tiny_WebServer/tree/main/doc/Log_system.md)|
 
 - [Install](#install)
-- [Install](#install)
+- [Usage](#usage)
+- [Technical Details](#technical-details)
+- [Model](#model)
+- [Webbench](#webbench)
 
 ## Install
 	./build.sh
