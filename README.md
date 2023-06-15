@@ -39,8 +39,8 @@ relative path maybe "./webserver.log", absolute path maybe "user/log_path/webser
 
 ## Model
 Reactor并发模型，其中主Reactor即main_loop，负责接收客户端连接请求，多个从Reactor即server的thread_pool中的多个IO线程，负责处理连接的IO事件
-[![并发模型]([http://https://github.com/UraraO/tiny_webserver/tree/main/doc/concurrency_frame.jpg](https://github.com/UraraO/tiny_webserver/blob/main/doc/concurrency_frame.jpg))]
+![并发模型](https://github.com/UraraO/tiny_webserver/blob/main/doc/concurrency_frame.jpg)
 
 ## Webbench
-[![压力测试结果](http://https://github.com/UraraO/tiny_webserver/tree/main/doc/webbench_result.jpg)]
+[![压力测试结果](https://github.com/UraraO/tiny_webserver/blob/main/doc/webbench_result.jpg)
 
