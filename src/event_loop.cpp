@@ -31,14 +31,16 @@ event_loop::event_loop() :
 	thread_id_(this_thread::get_id()),
 	m_wakeup_channel_sp(new channel(this, wakeup_fd_))
 {
-	if(t_loop_in_this_thread) {}
+	if(t_loop_in_this_thread) {
+		LOG << "FATAL ERROR: another event_loop has been in this thread, thread_id = " << t_loop_in_this_thread << " ";
+	}
 	else {
 		t_loop_in_this_thread = this;
 	}
 	// m_wakeup_channel_sp->set_events(EPOLLIN | EPOLLET | EPOLLONESHOT);
 	m_wakeup_channel_sp->set_events(EPOLLIN | EPOLLET);
-	m_wakeup_channel_sp->set_read_handler(bind(&event_loop::handleRead, this));
-	m_wakeup_channel_sp->set_conn_handler(bind(&event_loop::handleConn, this));
+	m_wakeup_channel_sp->set_read_handler([this] { handleRead(); });
+	m_wakeup_channel_sp->set_conn_handler([this] { handleConn(); });
 	poller_->uepoll_add(m_wakeup_channel_sp, 0);
 }
 

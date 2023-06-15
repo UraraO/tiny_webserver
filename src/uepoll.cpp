@@ -72,8 +72,7 @@ void uepoll::uepoll_del(uepoll::channel_sp request) {
 
 vector<shared_ptr<channel>> uepoll::poll() {
 	while (true) {
-		int event_count =
-				epoll_wait(epoll_fd_, &*m_events.begin(), m_events.size(), EPOLLWAIT_TIME);
+		int event_count = epoll_wait(epoll_fd_, &*m_events.begin(), m_events.size(), EPOLLWAIT_TIME);
 		if (event_count < 0) perror("epoll wait error");
 		vector<channel_sp> req_data = get_events_request(event_count);
 		if (!req_data.empty()) return req_data;

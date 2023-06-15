@@ -329,7 +329,7 @@ void http_data::handle_conn() {
 		events_ = (EPOLLOUT | EPOLLET);
 	} else {
 		// cout << "close with errors" << endl;
-		m_loop->run_in_loop(bind(&http_data::handle_close, shared_from_this()));
+		m_loop->run_in_loop([capture0 = shared_from_this()] { capture0->handle_close(); });
 	}
 }
 
@@ -562,14 +562,14 @@ AnalysisState http_data::analysis_request() {
 
 		// echo test
 		if (fileName_ == "hello") {
-			outBuffer_ =
-					"HTTP/1.1 200 OK\r\nContent-type: text/plain\r\n\r\nHello World";
+			string ret = "HTTP/1.1 200 OK\r\nContent-type: text/plain\r\n\r\nHello World";
+			outBuffer_ += ret;
 			return ANALYSIS_SUCCESS;
 		}
 		if (fileName_ == "favicon.ico") {
 			header += "Content-Type: image/png\r\n";
 			header += "Content-Length: " + to_string(sizeof favicon) + "\r\n";
-			header += "Server: LinYa's Web Server\r\n";
+			header += "Server: Urara's Web Server\r\n";
 
 			header += "\r\n";
 			outBuffer_ += header;

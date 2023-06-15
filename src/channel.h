@@ -58,12 +58,12 @@ public:
 	void handle_events() {
 		events_ = 0;
 		if ((revents_ & EPOLLHUP) && !(revents_ & EPOLLIN)) {
-			events_ = 0;
+			//events_ = 0;
 			return;
 		}
 		if (revents_ & EPOLLERR) {
 			if (error_handler_) error_handler_();
-			events_ = 0;
+			//events_ = 0;
 			return;
 		}
 		if (revents_ & (EPOLLIN | EPOLLPRI | EPOLLRDHUP)) {
@@ -96,8 +96,8 @@ public:
 private:
 	event_loop *loop_;
 	int fd_;
-	__uint32_t events_;
-	__uint32_t revents_;
+	__uint32_t events_;  // 需要关注的IO事件，由用户设置，epoll监听
+	__uint32_t revents_; // epoll监听到正在活动的事件，由epoll设置，用户接收
 	__uint32_t last_events_;
 
 	weak_ptr<http_data> holder_;

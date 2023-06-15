@@ -2,7 +2,7 @@
 
 
 /*
- * uepoll将epoll封装为poller类
+ * uepoll将epoll封装为uepoll类
  *
  * */
 
