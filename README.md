@@ -1,6 +1,7 @@
 # C++ multi-thread webserver
 
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)  
+
 ##Introduction
 本项目是一个基于C++11的web服务器，可以解析get，head请求，支持http长连接，采用Reactor并发模型，使用异步日志系统记录日志。
 参考了linyacool的WebServer：https://github.com/linyacool/WebServer
