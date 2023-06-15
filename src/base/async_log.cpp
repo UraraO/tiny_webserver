@@ -4,8 +4,11 @@
 #include <unistd.h>
 #include <chrono>
 
+
 #include "log_file.h"
 #include "async_log.h"
+
+using namespace std::chrono;
 
 
 async_log::async_log(const string &basename, int interval) :
@@ -81,7 +84,7 @@ void async_log::thread_func() {
 		}
 
 		for (auto & buffer : buffers_need_write) {
-			output.append(buffer->data(), buffer->length());
+			output.append_unlocked(buffer->data(), buffer->length());
 		}
 
 		if (buffers_need_write.size() > 2) {
@@ -107,8 +110,6 @@ void async_log::thread_func() {
 	}
 	output.flush();
 }
-
-
 
 
 

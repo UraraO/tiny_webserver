@@ -31,7 +31,7 @@ public:
 	uthread& operator= (const uthread&) = delete;
 	uthread& operator= (uthread&) = delete;
 
-	explicit uthread(const thread_func_type &, const string& name = string());
+	explicit uthread(thread_func_type , const string& name = string());
 	~uthread();
 
 	void start();
@@ -50,7 +50,6 @@ private:
 	string m_thread_name;
 	countdown_latch m_latch;
 };
-
 
 
 

@@ -8,7 +8,7 @@ log_file::log_file(const string &basename, int N) :
 	m_basename(basename),
 	flush_per_N(N),
 	m_count(0),
-	m_up_mutex(new mutex),
+	m_mutex(),
 	m_up_append_file(std::make_unique<append_file>(basename))
 {}
 
@@ -23,13 +23,15 @@ void log_file::append_unlocked(const char *logline, size_t length) {
 }
 
 // with-lock append
+/*
 void log_file::append(const char *logline, size_t length) {
-	lock_guard guard(*m_up_mutex);
+	lock_guard guard(m_mutex);
 	append_unlocked(logline, length);
 }
+*/
 
 void log_file::flush() {
-	lock_guard guard(*m_up_mutex);
+	lock_guard guard(m_mutex);
 	m_up_append_file->flush();
 }
 

@@ -1,10 +1,14 @@
 
 /*
  * async_log类是日志的核心类
+ * 利用下层的log_file实现了异步日志记录
+ * async_log有一个专属的线程，使用双缓冲区，实现前端向后端写/后端向磁盘写的分离
+ * 提高日志系统的并发度
  *
  * */
 
 #pragma once
+
 
 #include <functional>
 #include <vector>
@@ -15,7 +19,7 @@
 
 #include "countdown_latch.h"
 #include "log_stream.h"
-#include "thread.h"
+#include "uthread.h"
 
 using std::vector;
 using std::string;
@@ -38,7 +42,7 @@ public:
 	async_log& operator= (const async_log&) = delete;
 	async_log& operator= (async_log&) = delete;
 
-	async_log(const string& basename, int interval = 2);
+	explicit async_log(const string& basename, int interval = 2);
 	~async_log() {
 		if(running_) stop();
 	}
@@ -64,15 +68,13 @@ private:
 	bool running_;
 	string m_file_name;
 	uthread m_thread;
-	mutex m_mut;
+	mutable mutex m_mut;
 	condition_variable m_cond;
 	countdown_latch m_latch;
 	buffer_ptr current_buffer_ptr_;
 	buffer_ptr next_buffer_ptr_;
 	buffer_vec m_buffers;
 };
-
-
 
 
 

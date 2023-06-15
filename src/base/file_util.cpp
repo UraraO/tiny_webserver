@@ -11,7 +11,7 @@
 #include "file_util.h"
 
 // constructor
-append_file::append_file(string filename) :
+append_file::append_file(const string &filename) :
 	m_fp(fopen(filename.c_str(), "a+")) {
 	setbuffer(m_fp, m_buffer, sizeof(m_buffer));
 }
@@ -44,7 +44,6 @@ void append_file::flush() {
 size_t append_file::write(const char *logline, const size_t length) {
 	return fwrite_unlocked(logline, 1, length, m_fp);
 }
-
 
 
 
